@@ -1,0 +1,1729 @@
+{
+  "lut": {
+    "-90": {
+      "beta": 0.0,
+      "theta0_deg": -90.0,
+      "psll_db": -0.0001568301609928117,
+      "bw_m3db_deg": 27.25,
+      "mler": 0.07683635105372319,
+      "peak_err_deg": 2.25,
+      "level": "bartlett"
+    },
+    "-89": {
+      "beta": 0.0,
+      "theta0_deg": -89.0,
+      "psll_db": -0.0003794281610613356,
+      "bw_m3db_deg": 27.25,
+      "mler": 0.09491369720813722,
+      "peak_err_deg": 2.0,
+      "level": "bartlett"
+    },
+    "-88": {
+      "beta": 0.0,
+      "theta0_deg": -88.0,
+      "psll_db": -0.0007823300475016779,
+      "bw_m3db_deg": 27.5,
+      "mler": 0.11298870874428181,
+      "peak_err_deg": 1.5,
+      "level": "bartlett"
+    },
+    "-87": {
+      "beta": 0.0,
+      "theta0_deg": -87.0,
+      "psll_db": -0.001438144073984521,
+      "bw_m3db_deg": 27.5,
+      "mler": 0.13105980032511605,
+      "peak_err_deg": 1.0,
+      "level": "bartlett"
+    },
+    "-86": {
+      "beta": 0.0,
+      "theta0_deg": -86.0,
+      "psll_db": -0.002440025624971586,
+      "bw_m3db_deg": 27.5,
+      "mler": 0.14912479570947165,
+      "peak_err_deg": 0.75,
+      "level": "bartlett"
+    },
+    "-85": {
+      "beta": 0.0,
+      "theta0_deg": -85.0,
+      "psll_db": -0.0048930176491860265,
+      "bw_m3db_deg": 27.75,
+      "mler": 0.14912912500450726,
+      "peak_err_deg": 0.5,
+      "level": "bartlett"
+    },
+    "-84": {
+      "beta": 0.0,
+      "theta0_deg": -84.0,
+      "psll_db": -0.009026479518399399,
+      "bw_m3db_deg": 28.0,
+      "mler": 0.1491541748797626,
+      "peak_err_deg": 0.5,
+      "level": "bartlett"
+    },
+    "-83": {
+      "beta": 0.0,
+      "theta0_deg": -83.0,
+      "psll_db": -0.015516686177312932,
+      "bw_m3db_deg": 28.25,
+      "mler": 0.1492117435782434,
+      "peak_err_deg": 0.5,
+      "level": "bartlett"
+    },
+    "-82": {
+      "beta": 0.0,
+      "theta0_deg": -82.0,
+      "psll_db": -0.02519199499206217,
+      "bw_m3db_deg": 28.5,
+      "mler": 0.14931573542950508,
+      "peak_err_deg": 0.25,
+      "level": "bartlett"
+    },
+    "-81": {
+      "beta": 0.0,
+      "theta0_deg": -81.0,
+      "psll_db": -0.038971892469840105,
+      "bw_m3db_deg": 28.75,
+      "mler": 0.1494821557587436,
+      "peak_err_deg": 0.25,
+      "level": "bartlett"
+    },
+    "-80": {
+      "beta": 0.0,
+      "theta0_deg": -80.0,
+      "psll_db": -0.057897536691522464,
+      "bw_m3db_deg": 29.25,
+      "mler": 0.1497291156154091,
+      "peak_err_deg": 0.25,
+      "level": "bartlett"
+    },
+    "-79": {
+      "beta": 0.0,
+      "theta0_deg": -79.0,
+      "psll_db": -0.08314176758555439,
+      "bw_m3db_deg": 29.5,
+      "mler": 0.15007685027985496,
+      "peak_err_deg": 0.25,
+      "level": "bartlett"
+    },
+    "-78": {
+      "beta": 0.0,
+      "theta0_deg": -78.0,
+      "psll_db": -0.11600247274939149,
+      "bw_m3db_deg": 30.0,
+      "mler": 0.15054775553725805,
+      "peak_err_deg": 0.25,
+      "level": "bartlett"
+    },
+    "-77": {
+      "beta": 0.0,
+      "theta0_deg": -77.0,
+      "psll_db": -0.15790536716824569,
+      "bw_m3db_deg": 30.25,
+      "mler": 0.15116644545046118,
+      "peak_err_deg": 0.25,
+      "level": "bartlett"
+    },
+    "-76": {
+      "beta": 0.0,
+      "theta0_deg": -76.0,
+      "psll_db": -0.2104081720701169,
+      "bw_m3db_deg": 30.75,
+      "mler": 0.1519598347101605,
+      "peak_err_deg": 0.25,
+      "level": "bartlett"
+    },
+    "-75": {
+      "beta": 0.0,
+      "theta0_deg": -75.0,
+      "psll_db": -0.27520654968656066,
+      "bw_m3db_deg": 31.25,
+      "mler": 0.15295724744467962,
+      "peak_err_deg": 0.25,
+      "level": "bartlett"
+    },
+    "-74": {
+      "beta": 0.0,
+      "theta0_deg": -74.0,
+      "psll_db": -0.35414222215456626,
+      "bw_m3db_deg": 31.75,
+      "mler": 0.1541905524288138,
+      "peak_err_deg": 0.25,
+      "level": "bartlett"
+    },
+    "-73": {
+      "beta": 0.0,
+      "theta0_deg": -73.0,
+      "psll_db": -0.4492137978912075,
+      "bw_m3db_deg": 32.25,
+      "mler": 0.15569432165995298,
+      "peak_err_deg": 0.25,
+      "level": "bartlett"
+    },
+    "-72": {
+      "beta": 0.0,
+      "theta0_deg": -72.0,
+      "psll_db": -0.5625909570695113,
+      "bw_m3db_deg": 33.0,
+      "mler": 0.15750600488192074,
+      "peak_err_deg": 0.25,
+      "level": "bartlett"
+    },
+    "-71": {
+      "beta": 0.0,
+      "theta0_deg": -71.0,
+      "psll_db": -0.6966328228029045,
+      "bw_m3db_deg": 33.5,
+      "mler": 0.15966610630616102,
+      "peak_err_deg": 0.25,
+      "level": "bartlett"
+    },
+    "-70": {
+      "beta": 0.0,
+      "theta0_deg": -70.0,
+      "psll_db": -0.8539115856494381,
+      "bw_m3db_deg": 34.0,
+      "mler": 0.16221834080803585,
+      "peak_err_deg": 0.25,
+      "level": "bartlett"
+    },
+    "-69": {
+      "beta": 0.0,
+      "theta0_deg": -69.0,
+      "psll_db": -1.0372427843568626,
+      "bw_m3db_deg": 34.75,
+      "mler": 0.1652097343701781,
+      "peak_err_deg": 0.25,
+      "level": "bartlett"
+    },
+    "-68": {
+      "beta": 0.0,
+      "theta0_deg": -68.0,
+      "psll_db": -1.2497542158572026,
+      "bw_m3db_deg": 35.25,
+      "mler": 0.16869061642443198,
+      "peak_err_deg": 0.0,
+      "level": "bartlett"
+    },
+    "-67": {
+      "beta": 0.0,
+      "theta0_deg": -67.0,
+      "psll_db": -1.4948492896093344,
+      "bw_m3db_deg": 36.0,
+      "mler": 0.17271442881772783,
+      "peak_err_deg": 0.0,
+      "level": "bartlett"
+    },
+    "-66": {
+      "beta": 0.0,
+      "theta0_deg": -66.0,
+      "psll_db": -1.7763531505297359,
+      "bw_m3db_deg": 36.75,
+      "mler": 0.17733724631055503,
+      "peak_err_deg": 0.0,
+      "level": "bartlett"
+    },
+    "-65": {
+      "beta": 0.0,
+      "theta0_deg": -65.0,
+      "psll_db": -2.0985725993803066,
+      "bw_m3db_deg": 37.25,
+      "mler": 0.18261686630276527,
+      "peak_err_deg": 0.0,
+      "level": "bartlett"
+    },
+    "-64": {
+      "beta": 0.0,
+      "theta0_deg": -64.0,
+      "psll_db": -2.466405664678997,
+      "bw_m3db_deg": 38.0,
+      "mler": 0.18861128183999049,
+      "peak_err_deg": 0.0,
+      "level": "bartlett"
+    },
+    "-63": {
+      "beta": 0.0,
+      "theta0_deg": -63.0,
+      "psll_db": -2.885489268100579,
+      "bw_m3db_deg": 38.75,
+      "mler": 0.1953763058842358,
+      "peak_err_deg": 0.0,
+      "level": "bartlett"
+    },
+    "-62": {
+      "beta": 0.0,
+      "theta0_deg": -62.0,
+      "psll_db": -3.362399396091555,
+      "bw_m3db_deg": 33.25,
+      "mler": 0.20296207580083894,
+      "peak_err_deg": 0.0,
+      "level": "bartlett"
+    },
+    "-61": {
+      "beta": 0.0,
+      "theta0_deg": -61.0,
+      "psll_db": -3.904927565941536,
+      "bw_m3db_deg": 30.5,
+      "mler": 0.2114081533425677,
+      "peak_err_deg": 0.0,
+      "level": "bartlett"
+    },
+    "-60": {
+      "beta": 0.0,
+      "theta0_deg": -60.0,
+      "psll_db": -4.522471143827112,
+      "bw_m3db_deg": 28.75,
+      "mler": 0.2207369781274152,
+      "peak_err_deg": 0.0,
+      "level": "bartlett"
+    },
+    "-59": {
+      "beta": 0.0,
+      "theta0_deg": -59.0,
+      "psll_db": -5.226598792704918,
+      "bw_m3db_deg": 27.25,
+      "mler": 0.2309455780054624,
+      "peak_err_deg": 0.0,
+      "level": "bartlett"
+    },
+    "-58": {
+      "beta": 0.0,
+      "theta0_deg": -58.0,
+      "psll_db": -6.031894906732652,
+      "bw_m3db_deg": 26.0,
+      "mler": 0.24199574661700832,
+      "peak_err_deg": 0.0,
+      "level": "bartlett"
+    },
+    "-57": {
+      "beta": 0.0,
+      "theta0_deg": -57.0,
+      "psll_db": -6.9572670846831315,
+      "bw_m3db_deg": 25.0,
+      "mler": 0.25380342315560317,
+      "peak_err_deg": 0.0,
+      "level": "bartlett"
+    },
+    "-56": {
+      "beta": 0.0,
+      "theta0_deg": -56.0,
+      "psll_db": -8.028060610359189,
+      "bw_m3db_deg": 24.25,
+      "mler": 0.26622876941405454,
+      "peak_err_deg": 0.0,
+      "level": "bartlett"
+    },
+    "-55": {
+      "beta": 0.0,
+      "theta0_deg": -55.0,
+      "psll_db": -9.279665550089906,
+      "bw_m3db_deg": 23.5,
+      "mler": 0.27906935150712575,
+      "peak_err_deg": 0.0,
+      "level": "bartlett"
+    },
+    "-54": {
+      "beta": 0.0,
+      "theta0_deg": -54.0,
+      "psll_db": -10.764096907180091,
+      "bw_m3db_deg": 22.75,
+      "mler": 0.2920596406852326,
+      "peak_err_deg": 0.0,
+      "level": "bartlett"
+    },
+    "-53": {
+      "beta": 0.1,
+      "theta0_deg": -53.0,
+      "psll_db": -12.273514472461818,
+      "bw_m3db_deg": 21.0,
+      "mler": 0.3186911413407269,
+      "peak_err_deg": 1.0,
+      "level": "hard"
+    },
+    "-52": {
+      "beta": 0.1,
+      "theta0_deg": -52.0,
+      "psll_db": -12.496470480671942,
+      "bw_m3db_deg": 20.75,
+      "mler": 0.3280392110812527,
+      "peak_err_deg": 0.75,
+      "level": "hard"
+    },
+    "-51": {
+      "beta": 0.1,
+      "theta0_deg": -51.0,
+      "psll_db": -12.597278752785483,
+      "bw_m3db_deg": 20.25,
+      "mler": 0.33670254445030173,
+      "peak_err_deg": 0.75,
+      "level": "hard"
+    },
+    "-50": {
+      "beta": 0.1,
+      "theta0_deg": -50.0,
+      "psll_db": -12.683086667916543,
+      "bw_m3db_deg": 20.0,
+      "mler": 0.3446103737739744,
+      "peak_err_deg": 0.5,
+      "level": "hard"
+    },
+    "-49": {
+      "beta": 0.1,
+      "theta0_deg": -49.0,
+      "psll_db": -12.76229058131153,
+      "bw_m3db_deg": 19.5,
+      "mler": 0.35173851209079965,
+      "peak_err_deg": 0.5,
+      "level": "hard"
+    },
+    "-48": {
+      "beta": 0.1,
+      "theta0_deg": -48.0,
+      "psll_db": -12.833145971636773,
+      "bw_m3db_deg": 19.25,
+      "mler": 0.3581132312429081,
+      "peak_err_deg": 0.5,
+      "level": "hard"
+    },
+    "-47": {
+      "beta": 0.1,
+      "theta0_deg": -47.0,
+      "psll_db": -12.89535843484606,
+      "bw_m3db_deg": 19.0,
+      "mler": 0.3638101769744954,
+      "peak_err_deg": 0.25,
+      "level": "hard"
+    },
+    "-46": {
+      "beta": 0.1,
+      "theta0_deg": -46.0,
+      "psll_db": -12.947203380473082,
+      "bw_m3db_deg": 18.5,
+      "mler": 0.36894818258817,
+      "peak_err_deg": 0.25,
+      "level": "hard"
+    },
+    "-45": {
+      "beta": 0.1,
+      "theta0_deg": -45.0,
+      "psll_db": -12.987123791870285,
+      "bw_m3db_deg": 18.5,
+      "mler": 0.37367859503262624,
+      "peak_err_deg": 0.25,
+      "level": "hard"
+    },
+    "-44": {
+      "beta": 0.1,
+      "theta0_deg": -44.0,
+      "psll_db": -13.015215926951294,
+      "bw_m3db_deg": 18.0,
+      "mler": 0.37817132548813376,
+      "peak_err_deg": 0.25,
+      "level": "soft"
+    },
+    "-43": {
+      "beta": 0.1,
+      "theta0_deg": -43.0,
+      "psll_db": -13.032596470766721,
+      "bw_m3db_deg": 17.75,
+      "mler": 0.38259916859684345,
+      "peak_err_deg": 0.25,
+      "level": "soft"
+    },
+    "-42": {
+      "beta": 0.1,
+      "theta0_deg": -42.0,
+      "psll_db": -13.039387971982244,
+      "bw_m3db_deg": 17.5,
+      "mler": 0.387121985515318,
+      "peak_err_deg": 0.25,
+      "level": "soft"
+    },
+    "-41": {
+      "beta": 0.1,
+      "theta0_deg": -41.0,
+      "psll_db": -13.03783201910443,
+      "bw_m3db_deg": 17.25,
+      "mler": 0.39187218655379186,
+      "peak_err_deg": 0.25,
+      "level": "soft"
+    },
+    "-40": {
+      "beta": 0.1,
+      "theta0_deg": -40.0,
+      "psll_db": -13.033288058701888,
+      "bw_m3db_deg": 17.0,
+      "mler": 0.39694269188911857,
+      "peak_err_deg": 0.25,
+      "level": "soft"
+    },
+    "-39": {
+      "beta": 0.1,
+      "theta0_deg": -39.0,
+      "psll_db": -13.029354002122588,
+      "bw_m3db_deg": 16.75,
+      "mler": 0.4023782965444883,
+      "peak_err_deg": 0.25,
+      "level": "soft"
+    },
+    "-38": {
+      "beta": 0.1,
+      "theta0_deg": -38.0,
+      "psll_db": -13.02944771115577,
+      "bw_m3db_deg": 16.5,
+      "mler": 0.40817117257514074,
+      "peak_err_deg": 0.25,
+      "level": "soft"
+    },
+    "-37": {
+      "beta": 0.1,
+      "theta0_deg": -37.0,
+      "psll_db": -13.032614764327024,
+      "bw_m3db_deg": 16.0,
+      "mler": 0.4142610955424878,
+      "peak_err_deg": 0.25,
+      "level": "soft"
+    },
+    "-36": {
+      "beta": 0.1,
+      "theta0_deg": -36.0,
+      "psll_db": -13.042626954007082,
+      "bw_m3db_deg": 16.0,
+      "mler": 0.42054081235874724,
+      "peak_err_deg": 0.25,
+      "level": "soft"
+    },
+    "-35": {
+      "beta": 0.1,
+      "theta0_deg": -35.0,
+      "psll_db": -13.062785856752326,
+      "bw_m3db_deg": 15.75,
+      "mler": 0.4268666687851252,
+      "peak_err_deg": 0.25,
+      "level": "soft"
+    },
+    "-34": {
+      "beta": 0.1,
+      "theta0_deg": -34.0,
+      "psll_db": -13.093644478561593,
+      "bw_m3db_deg": 15.5,
+      "mler": 0.4330740958279986,
+      "peak_err_deg": 0.25,
+      "level": "soft"
+    },
+    "-33": {
+      "beta": 0.1,
+      "theta0_deg": -33.0,
+      "psll_db": -13.126646179361835,
+      "bw_m3db_deg": 15.25,
+      "mler": 0.43899679620034926,
+      "peak_err_deg": 0.25,
+      "level": "soft"
+    },
+    "-32": {
+      "beta": 0.1,
+      "theta0_deg": -32.0,
+      "psll_db": -13.168141680969663,
+      "bw_m3db_deg": 15.25,
+      "mler": 0.4444875811988617,
+      "peak_err_deg": 0.25,
+      "level": "soft"
+    },
+    "-31": {
+      "beta": 0.1,
+      "theta0_deg": -31.0,
+      "psll_db": -13.213684327278319,
+      "bw_m3db_deg": 15.0,
+      "mler": 0.44943802731053817,
+      "peak_err_deg": 0.25,
+      "level": "soft"
+    },
+    "-30": {
+      "beta": 0.1,
+      "theta0_deg": -30.0,
+      "psll_db": -13.256368203583786,
+      "bw_m3db_deg": 14.75,
+      "mler": 0.4537937676294357,
+      "peak_err_deg": 0.25,
+      "level": "soft"
+    },
+    "-29": {
+      "beta": 0.1,
+      "theta0_deg": -29.0,
+      "psll_db": -13.29990928836234,
+      "bw_m3db_deg": 14.75,
+      "mler": 0.45756256500500014,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "-28": {
+      "beta": 0.1,
+      "theta0_deg": -28.0,
+      "psll_db": -13.334106765948906,
+      "bw_m3db_deg": 14.5,
+      "mler": 0.46081338688200313,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "-27": {
+      "beta": 0.1,
+      "theta0_deg": -27.0,
+      "psll_db": -13.362062496585496,
+      "bw_m3db_deg": 14.5,
+      "mler": 0.4636662965731984,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "-26": {
+      "beta": 0.1,
+      "theta0_deg": -26.0,
+      "psll_db": -13.381942894496586,
+      "bw_m3db_deg": 14.25,
+      "mler": 0.4662746655125683,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "-25": {
+      "beta": 0.1,
+      "theta0_deg": -25.0,
+      "psll_db": -13.389060899546543,
+      "bw_m3db_deg": 14.25,
+      "mler": 0.46880254299587093,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "-24": {
+      "beta": 0.1,
+      "theta0_deg": -24.0,
+      "psll_db": -13.391184936922256,
+      "bw_m3db_deg": 14.25,
+      "mler": 0.4714007054860358,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "-23": {
+      "beta": 0.1,
+      "theta0_deg": -23.0,
+      "psll_db": -13.389608938506885,
+      "bw_m3db_deg": 14.25,
+      "mler": 0.4741849113027074,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "-22": {
+      "beta": 0.1,
+      "theta0_deg": -22.0,
+      "psll_db": -13.381458664094929,
+      "bw_m3db_deg": 13.75,
+      "mler": 0.47721937506563605,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "-21": {
+      "beta": 0.1,
+      "theta0_deg": -21.0,
+      "psll_db": -13.376875423900248,
+      "bw_m3db_deg": 13.75,
+      "mler": 0.480507680126563,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "-20": {
+      "beta": 0.1,
+      "theta0_deg": -20.0,
+      "psll_db": -13.378748173659085,
+      "bw_m3db_deg": 13.75,
+      "mler": 0.4839924291121623,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "-19": {
+      "beta": 0.1,
+      "theta0_deg": -19.0,
+      "psll_db": -13.385594894492751,
+      "bw_m3db_deg": 13.5,
+      "mler": 0.48756393350157756,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "-18": {
+      "beta": 0.1,
+      "theta0_deg": -18.0,
+      "psll_db": -13.398797228540566,
+      "bw_m3db_deg": 13.5,
+      "mler": 0.4910771236231099,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "-17": {
+      "beta": 0.1,
+      "theta0_deg": -17.0,
+      "psll_db": -13.42109749535355,
+      "bw_m3db_deg": 13.5,
+      "mler": 0.4943746086990453,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "-16": {
+      "beta": 0.1,
+      "theta0_deg": -16.0,
+      "psll_db": -13.450540576968956,
+      "bw_m3db_deg": 13.25,
+      "mler": 0.49731256030910337,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "-15": {
+      "beta": 0.1,
+      "theta0_deg": -15.0,
+      "psll_db": -13.484051513275723,
+      "bw_m3db_deg": 13.25,
+      "mler": 0.4997851415453169,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "-14": {
+      "beta": 0.1,
+      "theta0_deg": -14.0,
+      "psll_db": -13.516624096939536,
+      "bw_m3db_deg": 13.25,
+      "mler": 0.5017429658174999,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "-13": {
+      "beta": 0.1,
+      "theta0_deg": -13.0,
+      "psll_db": -13.545282333861179,
+      "bw_m3db_deg": 13.25,
+      "mler": 0.5032018483029778,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "-12": {
+      "beta": 0.1,
+      "theta0_deg": -12.0,
+      "psll_db": -13.568271103421111,
+      "bw_m3db_deg": 13.25,
+      "mler": 0.5042398954313315,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "-11": {
+      "beta": 0.1,
+      "theta0_deg": -11.0,
+      "psll_db": -13.583287876696815,
+      "bw_m3db_deg": 13.0,
+      "mler": 0.5049833517098972,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "-10": {
+      "beta": 0.1,
+      "theta0_deg": -10.0,
+      "psll_db": -13.589461664464109,
+      "bw_m3db_deg": 13.0,
+      "mler": 0.5055839212661547,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "-9": {
+      "beta": 0.1,
+      "theta0_deg": -9.0,
+      "psll_db": -13.587519993774993,
+      "bw_m3db_deg": 13.0,
+      "mler": 0.5061918766609427,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "-8": {
+      "beta": 0.1,
+      "theta0_deg": -8.0,
+      "psll_db": -13.577814365971292,
+      "bw_m3db_deg": 13.0,
+      "mler": 0.5069298366373884,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "-7": {
+      "beta": 0.1,
+      "theta0_deg": -7.0,
+      "psll_db": -13.565002708439899,
+      "bw_m3db_deg": 13.0,
+      "mler": 0.5078716901937481,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "-6": {
+      "beta": 0.1,
+      "theta0_deg": -6.0,
+      "psll_db": -13.553232458491241,
+      "bw_m3db_deg": 13.0,
+      "mler": 0.5090300625703376,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "-5": {
+      "beta": 0.1,
+      "theta0_deg": -5.0,
+      "psll_db": -13.54614974171267,
+      "bw_m3db_deg": 13.0,
+      "mler": 0.5103542844092863,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "-4": {
+      "beta": 0.1,
+      "theta0_deg": -4.0,
+      "psll_db": -13.546572040481028,
+      "bw_m3db_deg": 13.0,
+      "mler": 0.5117392464172359,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "-3": {
+      "beta": 0.1,
+      "theta0_deg": -3.0,
+      "psll_db": -13.556066736556803,
+      "bw_m3db_deg": 13.0,
+      "mler": 0.5130438851686768,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "-2": {
+      "beta": 0.1,
+      "theta0_deg": -2.0,
+      "psll_db": -13.574761604937368,
+      "bw_m3db_deg": 13.0,
+      "mler": 0.514116427887615,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "-1": {
+      "beta": 0.1,
+      "theta0_deg": -1.0,
+      "psll_db": -13.600723279764821,
+      "bw_m3db_deg": 13.0,
+      "mler": 0.5148221218630851,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "0": {
+      "beta": 0.1,
+      "theta0_deg": 0.0,
+      "psll_db": -13.627184104815653,
+      "bw_m3db_deg": 13.0,
+      "mler": 0.5150683435250639,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "1": {
+      "beta": 0.1,
+      "theta0_deg": 1.0,
+      "psll_db": -13.600723279764823,
+      "bw_m3db_deg": 13.0,
+      "mler": 0.5148221218630851,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "2": {
+      "beta": 0.1,
+      "theta0_deg": 2.0,
+      "psll_db": -13.57476160493736,
+      "bw_m3db_deg": 13.0,
+      "mler": 0.5141164278876149,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "3": {
+      "beta": 0.1,
+      "theta0_deg": 3.0,
+      "psll_db": -13.556066736556803,
+      "bw_m3db_deg": 13.0,
+      "mler": 0.5130438851686768,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "4": {
+      "beta": 0.1,
+      "theta0_deg": 4.0,
+      "psll_db": -13.546572040481031,
+      "bw_m3db_deg": 13.0,
+      "mler": 0.5117392464172359,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "5": {
+      "beta": 0.1,
+      "theta0_deg": 5.0,
+      "psll_db": -13.54614974171267,
+      "bw_m3db_deg": 13.0,
+      "mler": 0.5103542844092863,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "6": {
+      "beta": 0.1,
+      "theta0_deg": 6.0,
+      "psll_db": -13.553232458491244,
+      "bw_m3db_deg": 13.0,
+      "mler": 0.5090300625703377,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "7": {
+      "beta": 0.1,
+      "theta0_deg": 7.0,
+      "psll_db": -13.565002708439895,
+      "bw_m3db_deg": 13.0,
+      "mler": 0.5078716901937482,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "8": {
+      "beta": 0.1,
+      "theta0_deg": 8.0,
+      "psll_db": -13.577814365971292,
+      "bw_m3db_deg": 13.0,
+      "mler": 0.5069298366373884,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "9": {
+      "beta": 0.1,
+      "theta0_deg": 9.0,
+      "psll_db": -13.587519993774997,
+      "bw_m3db_deg": 13.0,
+      "mler": 0.5061918766609426,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "10": {
+      "beta": 0.1,
+      "theta0_deg": 10.0,
+      "psll_db": -13.589461664464107,
+      "bw_m3db_deg": 13.0,
+      "mler": 0.5055839212661547,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "11": {
+      "beta": 0.1,
+      "theta0_deg": 11.0,
+      "psll_db": -13.583287876696822,
+      "bw_m3db_deg": 13.0,
+      "mler": 0.5049833517098973,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "12": {
+      "beta": 0.1,
+      "theta0_deg": 12.0,
+      "psll_db": -13.568271103421111,
+      "bw_m3db_deg": 13.25,
+      "mler": 0.5042398954313314,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "13": {
+      "beta": 0.1,
+      "theta0_deg": 13.0,
+      "psll_db": -13.54528233386118,
+      "bw_m3db_deg": 13.25,
+      "mler": 0.5032018483029778,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "14": {
+      "beta": 0.1,
+      "theta0_deg": 14.0,
+      "psll_db": -13.516624096939543,
+      "bw_m3db_deg": 13.25,
+      "mler": 0.5017429658174999,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "15": {
+      "beta": 0.1,
+      "theta0_deg": 15.0,
+      "psll_db": -13.484051513275725,
+      "bw_m3db_deg": 13.25,
+      "mler": 0.4997851415453169,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "16": {
+      "beta": 0.1,
+      "theta0_deg": 16.0,
+      "psll_db": -13.450540576968962,
+      "bw_m3db_deg": 13.25,
+      "mler": 0.49731256030910326,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "17": {
+      "beta": 0.1,
+      "theta0_deg": 17.0,
+      "psll_db": -13.421097495353546,
+      "bw_m3db_deg": 13.5,
+      "mler": 0.49437460869904526,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "18": {
+      "beta": 0.1,
+      "theta0_deg": 18.0,
+      "psll_db": -13.398797228540566,
+      "bw_m3db_deg": 13.5,
+      "mler": 0.4910771236231098,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "19": {
+      "beta": 0.1,
+      "theta0_deg": 19.0,
+      "psll_db": -13.38559489449275,
+      "bw_m3db_deg": 13.5,
+      "mler": 0.4875639335015777,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "20": {
+      "beta": 0.1,
+      "theta0_deg": 20.0,
+      "psll_db": -13.378748173659083,
+      "bw_m3db_deg": 13.75,
+      "mler": 0.4839924291121623,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "21": {
+      "beta": 0.1,
+      "theta0_deg": 21.0,
+      "psll_db": -13.376875423900252,
+      "bw_m3db_deg": 13.75,
+      "mler": 0.4805076801265629,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "22": {
+      "beta": 0.1,
+      "theta0_deg": 22.0,
+      "psll_db": -13.381458664094925,
+      "bw_m3db_deg": 13.75,
+      "mler": 0.477219375065636,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "23": {
+      "beta": 0.1,
+      "theta0_deg": 23.0,
+      "psll_db": -13.389608938506885,
+      "bw_m3db_deg": 14.25,
+      "mler": 0.47418491130270723,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "24": {
+      "beta": 0.1,
+      "theta0_deg": 24.0,
+      "psll_db": -13.391184936922256,
+      "bw_m3db_deg": 14.25,
+      "mler": 0.4714007054860359,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "25": {
+      "beta": 0.1,
+      "theta0_deg": 25.0,
+      "psll_db": -13.389060899546536,
+      "bw_m3db_deg": 14.25,
+      "mler": 0.4688025429958709,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "26": {
+      "beta": 0.1,
+      "theta0_deg": 26.0,
+      "psll_db": -13.381942894496587,
+      "bw_m3db_deg": 14.25,
+      "mler": 0.46627466551256824,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "27": {
+      "beta": 0.1,
+      "theta0_deg": 27.0,
+      "psll_db": -13.362062496585503,
+      "bw_m3db_deg": 14.5,
+      "mler": 0.4636662965731984,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "28": {
+      "beta": 0.1,
+      "theta0_deg": 28.0,
+      "psll_db": -13.334106765948906,
+      "bw_m3db_deg": 14.5,
+      "mler": 0.46081338688200313,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "29": {
+      "beta": 0.1,
+      "theta0_deg": 29.0,
+      "psll_db": -13.299909288362343,
+      "bw_m3db_deg": 14.75,
+      "mler": 0.4575625650050001,
+      "peak_err_deg": 0.0,
+      "level": "soft"
+    },
+    "30": {
+      "beta": 0.1,
+      "theta0_deg": 30.0,
+      "psll_db": -13.256368203583786,
+      "bw_m3db_deg": 14.75,
+      "mler": 0.4537937676294357,
+      "peak_err_deg": -0.25,
+      "level": "soft"
+    },
+    "31": {
+      "beta": 0.1,
+      "theta0_deg": 31.0,
+      "psll_db": -13.213684327278326,
+      "bw_m3db_deg": 15.0,
+      "mler": 0.44943802731053817,
+      "peak_err_deg": -0.25,
+      "level": "soft"
+    },
+    "32": {
+      "beta": 0.1,
+      "theta0_deg": 32.0,
+      "psll_db": -13.168141680969665,
+      "bw_m3db_deg": 15.25,
+      "mler": 0.44448758119886167,
+      "peak_err_deg": -0.25,
+      "level": "soft"
+    },
+    "33": {
+      "beta": 0.1,
+      "theta0_deg": 33.0,
+      "psll_db": -13.126646179361831,
+      "bw_m3db_deg": 15.25,
+      "mler": 0.43899679620034926,
+      "peak_err_deg": -0.25,
+      "level": "soft"
+    },
+    "34": {
+      "beta": 0.1,
+      "theta0_deg": 34.0,
+      "psll_db": -13.093644478561593,
+      "bw_m3db_deg": 15.5,
+      "mler": 0.43307409582799866,
+      "peak_err_deg": -0.25,
+      "level": "soft"
+    },
+    "35": {
+      "beta": 0.1,
+      "theta0_deg": 35.0,
+      "psll_db": -13.062785856752326,
+      "bw_m3db_deg": 15.75,
+      "mler": 0.42686666878512514,
+      "peak_err_deg": -0.25,
+      "level": "soft"
+    },
+    "36": {
+      "beta": 0.1,
+      "theta0_deg": 36.0,
+      "psll_db": -13.042626954007076,
+      "bw_m3db_deg": 16.0,
+      "mler": 0.4205408123587472,
+      "peak_err_deg": -0.25,
+      "level": "soft"
+    },
+    "37": {
+      "beta": 0.1,
+      "theta0_deg": 37.0,
+      "psll_db": -13.032614764327024,
+      "bw_m3db_deg": 16.0,
+      "mler": 0.41426109554248775,
+      "peak_err_deg": -0.25,
+      "level": "soft"
+    },
+    "38": {
+      "beta": 0.1,
+      "theta0_deg": 38.0,
+      "psll_db": -13.029447711155775,
+      "bw_m3db_deg": 16.5,
+      "mler": 0.4081711725751407,
+      "peak_err_deg": -0.25,
+      "level": "soft"
+    },
+    "39": {
+      "beta": 0.1,
+      "theta0_deg": 39.0,
+      "psll_db": -13.029354002122595,
+      "bw_m3db_deg": 16.75,
+      "mler": 0.40237829654448837,
+      "peak_err_deg": -0.25,
+      "level": "soft"
+    },
+    "40": {
+      "beta": 0.1,
+      "theta0_deg": 40.0,
+      "psll_db": -13.033288058701892,
+      "bw_m3db_deg": 17.0,
+      "mler": 0.39694269188911857,
+      "peak_err_deg": -0.25,
+      "level": "soft"
+    },
+    "41": {
+      "beta": 0.1,
+      "theta0_deg": 41.0,
+      "psll_db": -13.037832019104433,
+      "bw_m3db_deg": 17.25,
+      "mler": 0.3918721865537919,
+      "peak_err_deg": -0.25,
+      "level": "soft"
+    },
+    "42": {
+      "beta": 0.1,
+      "theta0_deg": 42.0,
+      "psll_db": -13.03938797198225,
+      "bw_m3db_deg": 17.5,
+      "mler": 0.38712198551531796,
+      "peak_err_deg": -0.25,
+      "level": "soft"
+    },
+    "43": {
+      "beta": 0.1,
+      "theta0_deg": 43.0,
+      "psll_db": -13.032596470766729,
+      "bw_m3db_deg": 17.75,
+      "mler": 0.38259916859684345,
+      "peak_err_deg": -0.25,
+      "level": "soft"
+    },
+    "44": {
+      "beta": 0.1,
+      "theta0_deg": 44.0,
+      "psll_db": -13.015215926951292,
+      "bw_m3db_deg": 18.0,
+      "mler": 0.3781713254881338,
+      "peak_err_deg": -0.25,
+      "level": "soft"
+    },
+    "45": {
+      "beta": 0.1,
+      "theta0_deg": 45.0,
+      "psll_db": -12.987123791870289,
+      "bw_m3db_deg": 18.5,
+      "mler": 0.3736785950326263,
+      "peak_err_deg": -0.25,
+      "level": "hard"
+    },
+    "46": {
+      "beta": 0.1,
+      "theta0_deg": 46.0,
+      "psll_db": -12.94720338047308,
+      "bw_m3db_deg": 18.5,
+      "mler": 0.3689481825881699,
+      "peak_err_deg": -0.25,
+      "level": "hard"
+    },
+    "47": {
+      "beta": 0.1,
+      "theta0_deg": 47.0,
+      "psll_db": -12.895358434846056,
+      "bw_m3db_deg": 19.0,
+      "mler": 0.36381017697449547,
+      "peak_err_deg": -0.25,
+      "level": "hard"
+    },
+    "48": {
+      "beta": 0.1,
+      "theta0_deg": 48.0,
+      "psll_db": -12.833145971636775,
+      "bw_m3db_deg": 19.25,
+      "mler": 0.3581132312429081,
+      "peak_err_deg": -0.5,
+      "level": "hard"
+    },
+    "49": {
+      "beta": 0.1,
+      "theta0_deg": 49.0,
+      "psll_db": -12.762290581311536,
+      "bw_m3db_deg": 19.5,
+      "mler": 0.35173851209079965,
+      "peak_err_deg": -0.5,
+      "level": "hard"
+    },
+    "50": {
+      "beta": 0.1,
+      "theta0_deg": 50.0,
+      "psll_db": -12.683086667916543,
+      "bw_m3db_deg": 20.0,
+      "mler": 0.3446103737739744,
+      "peak_err_deg": -0.5,
+      "level": "hard"
+    },
+    "51": {
+      "beta": 0.1,
+      "theta0_deg": 51.0,
+      "psll_db": -12.59727875278548,
+      "bw_m3db_deg": 20.25,
+      "mler": 0.3367025444503018,
+      "peak_err_deg": -0.75,
+      "level": "hard"
+    },
+    "52": {
+      "beta": 0.1,
+      "theta0_deg": 52.0,
+      "psll_db": -12.496470480671944,
+      "bw_m3db_deg": 20.75,
+      "mler": 0.32803921108125267,
+      "peak_err_deg": -0.75,
+      "level": "hard"
+    },
+    "53": {
+      "beta": 0.1,
+      "theta0_deg": 53.0,
+      "psll_db": -12.27351447246181,
+      "bw_m3db_deg": 21.0,
+      "mler": 0.3186911413407269,
+      "peak_err_deg": -1.0,
+      "level": "hard"
+    },
+    "54": {
+      "beta": 0.0,
+      "theta0_deg": 54.0,
+      "psll_db": -10.76409690718009,
+      "bw_m3db_deg": 22.75,
+      "mler": 0.29205964068523255,
+      "peak_err_deg": 0.0,
+      "level": "bartlett"
+    },
+    "55": {
+      "beta": 0.0,
+      "theta0_deg": 55.0,
+      "psll_db": -9.279665550089904,
+      "bw_m3db_deg": 23.5,
+      "mler": 0.27906935150712575,
+      "peak_err_deg": 0.0,
+      "level": "bartlett"
+    },
+    "56": {
+      "beta": 0.0,
+      "theta0_deg": 56.0,
+      "psll_db": -8.028060610359184,
+      "bw_m3db_deg": 24.25,
+      "mler": 0.26622876941405454,
+      "peak_err_deg": 0.0,
+      "level": "bartlett"
+    },
+    "57": {
+      "beta": 0.0,
+      "theta0_deg": 57.0,
+      "psll_db": -6.957267084683134,
+      "bw_m3db_deg": 25.0,
+      "mler": 0.25380342315560317,
+      "peak_err_deg": 0.0,
+      "level": "bartlett"
+    },
+    "58": {
+      "beta": 0.0,
+      "theta0_deg": 58.0,
+      "psll_db": -6.031894906732651,
+      "bw_m3db_deg": 26.0,
+      "mler": 0.24199574661700832,
+      "peak_err_deg": 0.0,
+      "level": "bartlett"
+    },
+    "59": {
+      "beta": 0.0,
+      "theta0_deg": 59.0,
+      "psll_db": -5.226598792704918,
+      "bw_m3db_deg": 27.25,
+      "mler": 0.2309455780054624,
+      "peak_err_deg": 0.0,
+      "level": "bartlett"
+    },
+    "60": {
+      "beta": 0.0,
+      "theta0_deg": 60.0,
+      "psll_db": -4.522471143827113,
+      "bw_m3db_deg": 28.75,
+      "mler": 0.22073697812741525,
+      "peak_err_deg": 0.0,
+      "level": "bartlett"
+    },
+    "61": {
+      "beta": 0.0,
+      "theta0_deg": 61.0,
+      "psll_db": -3.9049275659415397,
+      "bw_m3db_deg": 30.5,
+      "mler": 0.2114081533425677,
+      "peak_err_deg": 0.0,
+      "level": "bartlett"
+    },
+    "62": {
+      "beta": 0.0,
+      "theta0_deg": 62.0,
+      "psll_db": -3.362399396091556,
+      "bw_m3db_deg": 33.25,
+      "mler": 0.202962075800839,
+      "peak_err_deg": 0.0,
+      "level": "bartlett"
+    },
+    "63": {
+      "beta": 0.0,
+      "theta0_deg": 63.0,
+      "psll_db": -2.885489268100579,
+      "bw_m3db_deg": 38.75,
+      "mler": 0.1953763058842357,
+      "peak_err_deg": 0.0,
+      "level": "bartlett"
+    },
+    "64": {
+      "beta": 0.0,
+      "theta0_deg": 64.0,
+      "psll_db": -2.466405664678997,
+      "bw_m3db_deg": 38.0,
+      "mler": 0.18861128183999049,
+      "peak_err_deg": 0.0,
+      "level": "bartlett"
+    },
+    "65": {
+      "beta": 0.0,
+      "theta0_deg": 65.0,
+      "psll_db": -2.0985725993803066,
+      "bw_m3db_deg": 37.25,
+      "mler": 0.18261686630276527,
+      "peak_err_deg": 0.0,
+      "level": "bartlett"
+    },
+    "66": {
+      "beta": 0.0,
+      "theta0_deg": 66.0,
+      "psll_db": -1.7763531505297367,
+      "bw_m3db_deg": 36.75,
+      "mler": 0.17733724631055497,
+      "peak_err_deg": 0.0,
+      "level": "bartlett"
+    },
+    "67": {
+      "beta": 0.0,
+      "theta0_deg": 67.0,
+      "psll_db": -1.4948492896093348,
+      "bw_m3db_deg": 36.0,
+      "mler": 0.17271442881772786,
+      "peak_err_deg": 0.0,
+      "level": "bartlett"
+    },
+    "68": {
+      "beta": 0.0,
+      "theta0_deg": 68.0,
+      "psll_db": -1.2497542158572053,
+      "bw_m3db_deg": 35.25,
+      "mler": 0.16869061642443198,
+      "peak_err_deg": 0.0,
+      "level": "bartlett"
+    },
+    "69": {
+      "beta": 0.0,
+      "theta0_deg": 69.0,
+      "psll_db": -1.0372427843568615,
+      "bw_m3db_deg": 34.75,
+      "mler": 0.16520973437017816,
+      "peak_err_deg": -0.25,
+      "level": "bartlett"
+    },
+    "70": {
+      "beta": 0.0,
+      "theta0_deg": 70.0,
+      "psll_db": -0.8539115856494381,
+      "bw_m3db_deg": 34.0,
+      "mler": 0.16221834080803585,
+      "peak_err_deg": -0.25,
+      "level": "bartlett"
+    },
+    "71": {
+      "beta": 0.0,
+      "theta0_deg": 71.0,
+      "psll_db": -0.6966328228029045,
+      "bw_m3db_deg": 33.5,
+      "mler": 0.159666106306161,
+      "peak_err_deg": -0.25,
+      "level": "bartlett"
+    },
+    "72": {
+      "beta": 0.0,
+      "theta0_deg": 72.0,
+      "psll_db": -0.5625909570695086,
+      "bw_m3db_deg": 33.0,
+      "mler": 0.15750600488192076,
+      "peak_err_deg": -0.25,
+      "level": "bartlett"
+    },
+    "73": {
+      "beta": 0.0,
+      "theta0_deg": 73.0,
+      "psll_db": -0.4492137978912075,
+      "bw_m3db_deg": 32.25,
+      "mler": 0.15569432165995298,
+      "peak_err_deg": -0.25,
+      "level": "bartlett"
+    },
+    "74": {
+      "beta": 0.0,
+      "theta0_deg": 74.0,
+      "psll_db": -0.35414222215456626,
+      "bw_m3db_deg": 31.75,
+      "mler": 0.1541905524288138,
+      "peak_err_deg": -0.25,
+      "level": "bartlett"
+    },
+    "75": {
+      "beta": 0.0,
+      "theta0_deg": 75.0,
+      "psll_db": -0.27520654968655917,
+      "bw_m3db_deg": 31.25,
+      "mler": 0.1529572474446796,
+      "peak_err_deg": -0.25,
+      "level": "bartlett"
+    },
+    "76": {
+      "beta": 0.0,
+      "theta0_deg": 76.0,
+      "psll_db": -0.21040817207011536,
+      "bw_m3db_deg": 30.75,
+      "mler": 0.15195983471016047,
+      "peak_err_deg": -0.25,
+      "level": "bartlett"
+    },
+    "77": {
+      "beta": 0.0,
+      "theta0_deg": 77.0,
+      "psll_db": -0.15790536716824521,
+      "bw_m3db_deg": 30.25,
+      "mler": 0.1511664454504612,
+      "peak_err_deg": -0.25,
+      "level": "bartlett"
+    },
+    "78": {
+      "beta": 0.0,
+      "theta0_deg": 78.0,
+      "psll_db": -0.11600247274939149,
+      "bw_m3db_deg": 30.0,
+      "mler": 0.15054775553725802,
+      "peak_err_deg": -0.25,
+      "level": "bartlett"
+    },
+    "79": {
+      "beta": 0.0,
+      "theta0_deg": 79.0,
+      "psll_db": -0.08314176758555439,
+      "bw_m3db_deg": 29.5,
+      "mler": 0.15007685027985498,
+      "peak_err_deg": -0.25,
+      "level": "bartlett"
+    },
+    "80": {
+      "beta": 0.0,
+      "theta0_deg": 80.0,
+      "psll_db": -0.057897536691522464,
+      "bw_m3db_deg": 29.25,
+      "mler": 0.1497291156154091,
+      "peak_err_deg": -0.25,
+      "level": "bartlett"
+    },
+    "81": {
+      "beta": 0.0,
+      "theta0_deg": 81.0,
+      "psll_db": -0.03897189246984156,
+      "bw_m3db_deg": 28.75,
+      "mler": 0.14948215575874368,
+      "peak_err_deg": -0.25,
+      "level": "bartlett"
+    },
+    "82": {
+      "beta": 0.0,
+      "theta0_deg": 82.0,
+      "psll_db": -0.02519199499206217,
+      "bw_m3db_deg": 28.5,
+      "mler": 0.14931573542950508,
+      "peak_err_deg": -0.25,
+      "level": "bartlett"
+    },
+    "83": {
+      "beta": 0.0,
+      "theta0_deg": 83.0,
+      "psll_db": -0.015516686177312932,
+      "bw_m3db_deg": 28.25,
+      "mler": 0.14921174357824335,
+      "peak_err_deg": -0.5,
+      "level": "bartlett"
+    },
+    "84": {
+      "beta": 0.0,
+      "theta0_deg": 84.0,
+      "psll_db": -0.009026479518399399,
+      "bw_m3db_deg": 28.0,
+      "mler": 0.14915417487976262,
+      "peak_err_deg": -0.5,
+      "level": "bartlett"
+    },
+    "85": {
+      "beta": 0.0,
+      "theta0_deg": 85.0,
+      "psll_db": -0.0048930176491860265,
+      "bw_m3db_deg": 27.75,
+      "mler": 0.14912912500450726,
+      "peak_err_deg": -0.5,
+      "level": "bartlett"
+    },
+    "86": {
+      "beta": 0.0,
+      "theta0_deg": 86.0,
+      "psll_db": -0.002440025624967244,
+      "bw_m3db_deg": 27.5,
+      "mler": 0.14912479570947165,
+      "peak_err_deg": -0.75,
+      "level": "bartlett"
+    },
+    "87": {
+      "beta": 0.0,
+      "theta0_deg": 87.0,
+      "psll_db": -0.0014381440739874144,
+      "bw_m3db_deg": 27.5,
+      "mler": 0.13105980032511608,
+      "peak_err_deg": -1.0,
+      "level": "bartlett"
+    },
+    "88": {
+      "beta": 0.0,
+      "theta0_deg": 88.0,
+      "psll_db": -0.0007823300475016779,
+      "bw_m3db_deg": 27.5,
+      "mler": 0.11298870874428181,
+      "peak_err_deg": -1.5,
+      "level": "bartlett"
+    },
+    "89": {
+      "beta": 0.0,
+      "theta0_deg": 89.0,
+      "psll_db": -0.00037942816106374666,
+      "bw_m3db_deg": 27.25,
+      "mler": 0.09491369720813726,
+      "peak_err_deg": -2.0,
+      "level": "bartlett"
+    },
+    "90": {
+      "beta": 0.0,
+      "theta0_deg": 90.0,
+      "psll_db": -0.00015683016099377604,
+      "bw_m3db_deg": 27.25,
+      "mler": 0.07683635105372318,
+      "peak_err_deg": -2.25,
+      "level": "bartlett"
+    }
+  },
+  "fallbacks_theta0": [
+    -90,
+    -89,
+    -88,
+    -87,
+    -86,
+    -85,
+    -84,
+    -83,
+    -82,
+    -81,
+    -80,
+    -79,
+    -78,
+    -77,
+    -76,
+    -75,
+    -74,
+    -73,
+    -72,
+    -71,
+    -70,
+    -69,
+    -68,
+    -67,
+    -66,
+    -65,
+    -64,
+    -63,
+    -62,
+    -61,
+    -60,
+    -59,
+    -58,
+    -57,
+    -56,
+    -55,
+    -54,
+    -53,
+    -52,
+    -51,
+    -50,
+    -49,
+    -48,
+    -47,
+    -46,
+    -45,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90
+  ],
+  "soft_target_db": -13.0,
+  "hard_target_db": -10.0
+}

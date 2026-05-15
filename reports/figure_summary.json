@@ -1,0 +1,10 @@
+{
+  "files": [
+    "af_theta0_0.png",
+    "beam_scan.png",
+    "beta_lut.png",
+    "beta_pareto.png",
+    "joint_norm_mc.png"
+  ],
+  "joint_norm_max_peak": 0.9947277307510376
+}
