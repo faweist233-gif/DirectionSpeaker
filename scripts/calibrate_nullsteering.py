@@ -1,7 +1,7 @@
-﻿"""Offline null-steering weight calibration (pure NumPy/SciPy).
+"""Offline null-steering weight calibration (pure NumPy/SciPy).
 
-Mirrors the logic of audio_generation/optimization_difffreq_widenullsteering.py
-but uses L-BFGS-B instead of PyTorch Adam.
+Mirrors the logic of legacy/audio_generation_v0/optimization_difffreq_widenullsteering.py
+(the original PyTorch Adam prototype) but uses L-BFGS-B instead.
 
 Outputs a JSON LUT keyed by "{target}_{null}" (quantised to THETA_STEP_DEG).
 Each entry contains:
@@ -29,20 +29,25 @@ import numpy as np
 from scipy.optimize import minimize
 
 # ---------------------------------------------------------------------------
-# Constants (mirror config.py values so this script is self-contained)
+# Constants: imported from the single source of truth (directional_speaker.config)
 # ---------------------------------------------------------------------------
-C_SOUND = 343.0
-FC_HZ = 40_000
-FS_HZ = 96_000
-N_CHANNELS = 8
-ELEMENT_SPACING_M = C_SOUND / FC_HZ / 2.0  # lambda/2 @ 40 kHz
+_ROOT = pathlib.Path(__file__).resolve().parents[1]
+import sys
+sys.path.insert(0, str(_ROOT))
+from directional_speaker import config as cfg  # noqa: E402
+
+C_SOUND = cfg.C_SOUND
+FC_HZ = cfg.FC_HZ
+FS_HZ = cfg.FS_HZ
+N_CHANNELS = cfg.N_CHANNELS
+ELEMENT_SPACING_M = cfg.ELEMENT_SPACING_M
 
 THETA_MIN = -60.0
 THETA_MAX = 60.0
-THETA_STEP = 3.0
+THETA_STEP = cfg.THETA_STEP_DEG
 
-PASSBAND_BW = 4000.0   # ±4 kHz
-FREQ_STEP = 100.0      # Hz
+PASSBAND_BW = cfg.PASSBAND_BW_HZ
+FREQ_STEP = cfg.FREQ_STEP_HZ
 
 # Optimisation grid for array response
 AZ_GRID_STEP = 1.0     # degree

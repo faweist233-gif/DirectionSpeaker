@@ -196,7 +196,6 @@ class LiveTracker(HeadTracker):
         color = aligned.get_color_frame()
         if not depth or not color:
             raise RuntimeError("frame fetch failed")
-        import numpy as np
         color_img = np.asanyarray(color.get_data())
         # BGR -> RGB for mediapipe
         rgb = color_img[..., ::-1]

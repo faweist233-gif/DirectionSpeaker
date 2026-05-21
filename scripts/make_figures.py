@@ -1,11 +1,9 @@
-"""Render calibration figures to reports/images/.
+"""Render null-steering calibration figures to reports/images/.
 
-  - af_theta0_0.png     : array factor at theta0=0 with key metrics annotated
-  - beam_scan.png       : array factor overlay for theta0 in {-60,-30,0,30,60}
-  - beta_pareto.png     : already produced by scripts/calibrate_beta.py
-  - beta_lut.png        : already produced by scripts/calibrate_beta.py
-  - joint_norm_mc.png   : Monte Carlo peak magnitude histogram under joint norm
-  - sim_vs_meas_table.csv : placeholder table for §7 validation
+Figures (regenerated from data/beam_weights/nullsteering_lut.json):
+  - af_target_0_null_40.png : array factor at carrier for (target=0, null=40)
+  - beam_scan.png           : AF overlay for several (target, null) pairs
+  - joint_norm_mc.png       : Monte Carlo |x[k,t]| histogram from beamformer.combine()
 """
 from __future__ import annotations
 
@@ -21,114 +19,142 @@ import matplotlib.pyplot as plt
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from directional_speaker import beamformer as bf
 from directional_speaker import config as cfg
+from directional_speaker.beamformer import NullSteeringBeamformer
+from directional_speaker.modulator import DSBAMModulator
 
 OUT = ROOT / "reports" / "images"
 OUT.mkdir(parents=True, exist_ok=True)
 
 
-def _af_db(w: np.ndarray, grid: np.ndarray) -> np.ndarray:
-    af = bf.array_factor(w, grid)
+def _lut_array_factor(amp_row: np.ndarray, phase_row: np.ndarray,
+                      freq_hz: float, grid_deg: np.ndarray) -> np.ndarray:
+    """Per-frequency array factor for a single passband bin.
+
+    AF(θ) = (1/N) Σ_n  amp[n] * exp(j*(phase[n] + 2π·n·d/λ·sinθ))
+    Returns magnitude in dB normalised to its peak.
+    """
+    N = amp_row.shape[0]
+    lam = cfg.C_SOUND / freq_hz
+    n_idx = np.arange(N)[None, :]                     # (1, N)
+    sin_az = np.sin(np.deg2rad(grid_deg))[:, None]    # (G, 1)
+    geom = 2.0 * np.pi * cfg.ELEMENT_SPACING_M * n_idx / lam * sin_az  # (G, N)
+    total = geom + phase_row[None, :]
+    af = np.sum(amp_row[None, :] * np.exp(1j * total), axis=1) / N
     mag2 = np.abs(af) ** 2
     mag2 /= mag2.max() + 1e-30
     return 10 * np.log10(mag2 + 1e-12)
 
 
-def fig_af_theta0_0():
-    w = bf.solve_weights(0.0, beta=cfg.BETA_LUT.get(0, cfg.BETA))
+def _carrier_row(entry: dict) -> tuple[np.ndarray, np.ndarray, float]:
+    """Pick the amplitude/phase row closest to the carrier frequency."""
+    freqs = np.asarray(entry["freqs_hz"], dtype=float)
+    j = int(np.argmin(np.abs(freqs - cfg.FC_HZ)))
+    amp = np.asarray(entry["amp"], dtype=float)[j]
+    phase = np.asarray(entry["phase"], dtype=float)[j]
+    return amp, phase, float(freqs[j])
+
+
+def fig_single(lut: dict, target: int, null: int) -> None:
+    key = f"{target}_{null}"
+    if key not in lut:
+        print(f"[skip] LUT missing {key}")
+        return
+    amp, phase, fc = _carrier_row(lut[key])
     grid = np.arange(-90, 90 + 0.25, 0.25)
-    af_db = _af_db(w, grid)
-    m = bf.af_metrics(w, 0.0)
+    af_db = _lut_array_factor(amp, phase, fc, grid)
 
     fig, ax = plt.subplots(figsize=(8, 4.5))
     ax.plot(grid, af_db, color="C0")
-    ax.axvspan(-cfg.W_MAIN_DEG / 2, cfg.W_MAIN_DEG / 2, color="C2", alpha=0.15,
-               label=rf"$W_{{main}}={cfg.W_MAIN_DEG}^\circ$")
-    ax.axhline(m.psll_db, color="red", ls="--", lw=0.8,
-               label=f"PSLL = {m.psll_db:.2f} dB")
-    ax.axhline(cfg.PSLL_SOFT_DB, color="gray", ls=":", lw=0.6,
-               label=f"soft target {cfg.PSLL_SOFT_DB} dB")
-    ax.set_ylim(-40, 2)
+    ax.axvline(target, color="C2", ls="--", lw=0.8, label=f"target {target}°")
+    ax.axvline(null, color="red", ls="--", lw=0.8, label=f"null {null}°")
+    ax.set_ylim(-50, 2)
     ax.set_xlim(-90, 90)
     ax.set_xlabel(r"$\theta$ (deg)")
-    ax.set_ylabel("normalized AF (dB)")
-    ax.set_title(
-        rf"AF @ $\theta_0=0^\circ$, $\beta={cfg.BETA_LUT.get(0, cfg.BETA):.3f}$, "
-        rf"-3 dB BW={m.bw_m3db_deg:.2f}$^\circ$, MLER={m.mler:.3f}"
-    )
+    ax.set_ylabel("normalised AF (dB)")
+    ax.set_title(f"Null-steering AF @ {fc/1000:.1f} kHz  (target={target}°, null={null}°)")
     ax.grid(True, alpha=0.4)
-    ax.legend(loc="lower right", fontsize=8)
+    ax.legend(loc="lower right", fontsize=9)
     plt.tight_layout()
-    plt.savefig(OUT / "af_theta0_0.png", dpi=140)
+    plt.savefig(OUT / f"af_target_{target}_null_{null}.png", dpi=140)
     plt.close(fig)
 
 
-def fig_beam_scan():
-    thetas = [-60, -30, 0, 30, 60]
+def fig_beam_scan(lut: dict) -> None:
+    pairs = [(-60, 0), (-30, 30), (0, 39), (30, -30), (60, 0)]
     grid = np.arange(-90, 90 + 0.25, 0.25)
     fig, ax = plt.subplots(figsize=(8.5, 4.8))
-    for t0 in thetas:
-        beta = cfg.BETA_LUT.get(t0, cfg.BETA)
-        w = bf.solve_weights(t0, beta=beta)
-        af_db = _af_db(w, grid)
-        m = bf.af_metrics(w, float(t0))
-        ax.plot(grid, af_db, lw=1.2,
-                label=rf"$\theta_0={t0:+d}^\circ$, PSLL={m.psll_db:.1f} dB, BW={m.bw_m3db_deg:.1f}$^\circ$")
-        ax.axvline(t0, color="gray", ls=":", lw=0.4)
-    ax.set_ylim(-35, 2)
+    for tgt, nul in pairs:
+        key = f"{tgt}_{nul}"
+        entry = lut.get(key)
+        if entry is None:
+            continue
+        amp, phase, fc = _carrier_row(entry)
+        af_db = _lut_array_factor(amp, phase, fc, grid)
+        ax.plot(grid, af_db, lw=1.2, label=f"target={tgt:+d}°, null={nul:+d}°")
+    ax.set_ylim(-50, 2)
     ax.set_xlim(-90, 90)
     ax.set_xlabel(r"$\theta$ (deg)")
-    ax.set_ylabel("normalized AF (dB)")
-    ax.set_title("Beam scan across target directions (8ch ULA, eigenfilter)")
+    ax.set_ylabel("normalised AF (dB)")
+    ax.set_title("Beam scan across (target, null) pairs (8-ch ULA, null-steering LUT)")
     ax.grid(True, alpha=0.4)
-    ax.legend(loc="lower center", fontsize=7.5, ncol=2)
+    ax.legend(loc="lower center", fontsize=8, ncol=2)
     plt.tight_layout()
     plt.savefig(OUT / "beam_scan.png", dpi=140)
     plt.close(fig)
 
 
-def fig_joint_norm_mc(trials: int = 2000):
-    """Verify |x[k,t]| <= 1 post-modulation across random (theta_L, theta_R) and audio."""
-    from directional_speaker.modulator import DSBAMModulator
-
+def fig_joint_norm_mc(bf: NullSteeringBeamformer, trials: int = 200) -> float:
+    """Verify |x[k,t]| ≤ 1 across random (theta_L, theta_R) and random audio."""
     rng = np.random.default_rng(0)
-    beamformer = bf.Beamformer()
-    beamformer.prewarm()
-    peaks = []
+    mod = DSBAMModulator()
     fs = cfg.FS_HZ
     t = np.arange(int(0.01 * fs)) / fs  # 10 ms
+
+    # Use only quantised LUT angles to guarantee LUT hits
+    angles = np.arange(-60, 61, int(cfg.THETA_STEP_DEG))
+    peaks = []
     for _ in range(trials):
-        t_L = rng.integers(-60, 61)
-        t_R = rng.integers(-60, 61)
+        t_L = int(rng.choice(angles))
+        t_R = int(rng.choice(angles))
         f1 = rng.uniform(200, 4000)
         f2 = rng.uniform(200, 4000)
-        # baseband audio with |s|<=1
-        s_L = np.clip(0.99 * np.sin(2 * np.pi * f1 * t), -1, 1)
-        s_R = np.clip(0.99 * np.sin(2 * np.pi * f2 * t + rng.uniform(0, np.pi)), -1, 1)
-        Z = beamformer.combine_baseband(float(t_L), float(t_R), s_L, s_R)
-        mod = DSBAMModulator()
-        X = mod.modulate(Z)
-        peaks.append(float(np.max(np.abs(X))))
+        s_L = np.clip(0.99 * np.sin(2 * np.pi * f1 * t), -1, 1).astype(np.float32)
+        s_R = np.clip(0.99 * np.sin(2 * np.pi * f2 * t + rng.uniform(0, np.pi)),
+                      -1, 1).astype(np.float32)
+        mod_L, mod_R = mod.modulate_multi(s_L, s_R)
+        out = bf.combine(float(t_L), float(t_R), mod_L, mod_R)
+        peaks.append(float(np.max(np.abs(out))))
 
     fig, ax = plt.subplots(figsize=(7, 4.2))
-    ax.hist(peaks, bins=60, color="C0", alpha=0.85)
+    ax.hist(peaks, bins=40, color="C0", alpha=0.85)
     ax.axvline(1.0, color="red", ls="--", label="|x|=1")
     ax.set_xlabel("max |x[k,t]|")
     ax.set_ylabel("count")
-    ax.set_title(f"Joint-normalization peak magnitudes ({trials} trials)")
+    ax.set_title(f"Joint-normalisation peak magnitudes ({trials} trials)")
     ax.legend()
     ax.grid(True, alpha=0.4)
     plt.tight_layout()
     plt.savefig(OUT / "joint_norm_mc.png", dpi=140)
     plt.close(fig)
-    return max(peaks)
+    return max(peaks) if peaks else float("nan")
 
 
-def main():
-    fig_af_theta0_0()
-    fig_beam_scan()
-    max_peak = fig_joint_norm_mc()
+def main() -> None:
+    lut_path = ROOT / cfg.BEAM_LUT_PATH
+    if not lut_path.is_file():
+        print(f"LUT not found: {lut_path}\nRun scripts/calibrate_nullsteering.py first.")
+        sys.exit(1)
+
+    with open(lut_path, "r", encoding="utf-8") as f:
+        lut = json.load(f)
+
+    fig_single(lut, target=0, null=39)
+    fig_beam_scan(lut)
+
+    bf = NullSteeringBeamformer(lut_path)
+    max_peak = fig_joint_norm_mc(bf)
+
     summary = {
         "files": sorted(p.name for p in OUT.iterdir()),
         "joint_norm_max_peak": max_peak,

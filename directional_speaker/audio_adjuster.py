@@ -1,11 +1,10 @@
-"""Audio adjuster — amplitude compensation and phase alignment based on ear distances.
+"""Audio adjuster — amplitude compensation based on ear distances.
 
-Given (d_L, d_R), applies:
-  - amplitude compensation: gain = (d_ref / d_i)^alpha  (inverse-distance-like)
-  - phase alignment (pre-delay): align perceived arrival at the ear level
-  - reference distance = min(d_L, d_R) to avoid amplifying clip-prone channel.
+Given (d_L, d_R), applies amplitude compensation: gain = (d_ref / d_i)^alpha
+with d_ref = min(d_L, d_R) to avoid amplifying the clip-prone channel.
 
-Keeps per-ear envelope; is applied to baseband audio BEFORE modulation.
+No time alignment is applied: the acoustic path already imposes the physical
+delay, so digital pre-delay would double-count.
 """
 from __future__ import annotations
 
@@ -41,16 +40,6 @@ class AudioAdjuster:
         g_R = self._gain(d_R, d_ref)
         y_L = (g_L * s_L).astype(np.float32)
         y_R = (g_R * s_R).astype(np.float32)
-
-        # time-align (far ear reaches later; delay the near one by diff)
-        samples_per_meter = self.fs / self.c
-        delay_L = int(round(max(d_L - d_ref, 0.0) * 0.0))   # keep near ear on 0 delay
-        delay_R = int(round(max(d_R - d_ref, 0.0) * 0.0))
-        # note: we do NOT actually delay to align physical arrival because
-        # the acoustic path already adds that delay; digital pre-delay would
-        # double-count. We keep the hook for future predictive compensation.
-        del delay_L, delay_R
-
         return y_L, y_R
 
 
