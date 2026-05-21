@@ -1,0 +1,18 @@
+[
+  "directional_speaker/tests/test_beamformer.py::test_apply_passband_shape",
+  "directional_speaker/tests/test_beamformer.py::test_combine_shape",
+  "directional_speaker/tests/test_beamformer.py::test_combine_with_different_signals",
+  "directional_speaker/tests/test_beamformer.py::test_lut_load",
+  "directional_speaker/tests/test_beamformer.py::test_quantize",
+  "directional_speaker/tests/test_head_tracker.py::test_delta_theta_formula",
+  "directional_speaker/tests/test_head_tracker.py::test_make_tracker_dispatch",
+  "directional_speaker/tests/test_head_tracker.py::test_virtual_allowed_angles[-60]",
+  "directional_speaker/tests/test_head_tracker.py::test_virtual_allowed_angles[0]",
+  "directional_speaker/tests/test_head_tracker.py::test_virtual_allowed_angles[60]",
+  "directional_speaker/tests/test_head_tracker.py::test_virtual_center_angle_symmetric",
+  "directional_speaker/tests/test_head_tracker.py::test_virtual_distance_scales",
+  "directional_speaker/tests/test_head_tracker.py::test_virtual_invalid_angle_raises",
+  "directional_speaker/tests/test_modulator.py::test_dsbam_peak_le_one",
+  "directional_speaker/tests/test_modulator.py::test_dsbam_spectrum",
+  "directional_speaker/tests/test_modulator.py::test_phase_continuity_across_frames"
+]
